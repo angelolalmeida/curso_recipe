@@ -1,0 +1,55 @@
+# Django 4.2 LTS
+Django>=4.2,<4.3
+
+# Variáveis de ambiente
+python-dotenv>=1.0.0
+
+# Configuração de banco de dados via URL
+dj-database-url>=2.0.0
+
+# Dependências opcionais para produção
+gunicorn>=21.0.0
+whitenoise>=6.5.0
+
+# Cache e sessões
+redis>=4.5.0
+
+# Celery (para tarefas assíncronas)
+celery>=5.3.0
+
+# AWS S3 (para arquivos estáticos)
+boto3>=1.26.0
+django-storages>=1.14.0
+
+# Stripe (para pagamentos)
+stripe>=6.0.0
+
+# Social authentication
+django-allauth>=0.54.0
+
+# API REST
+djangorestframework>=3.14.0
+django-cors-headers>=4.0.0
+
+# Validação e serialização
+marshmallow>=3.19.0
+
+# Testes
+pytest>=7.4.0
+pytest-django>=4.5.0
+factory-boy>=3.3.0
+
+# Desenvolvimento
+django-debug-toolbar>=4.1.0
+django-extensions>=3.2.0
+
+# Segurança
+django-axes>=6.0.0
+django-ratelimit>=4.0.0
+
+# Monitoramento
+sentry-sdk>=1.28.0
+
+# Utilitários
+Pillow>=10.0.0
+python-decouple>=3.8 
