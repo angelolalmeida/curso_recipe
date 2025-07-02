@@ -33,7 +33,7 @@ Este é um projeto de estudo focado no desenvolvimento web com Django, criado pa
 - **HTML5** - Estrutura das páginas
 - **CSS3** - Estilização e layout
 - **JavaScript** - Interatividade
-- **Bootstrap** - Framework CSS
+- **Bootstrap 5** - Framework CSS (usei o pacote do próprio Django)
 - **FontAwsome 6.6** - Ícones (usei o pacote do próprio Django)
 
 ### Ferramentas de Desenvolvimento

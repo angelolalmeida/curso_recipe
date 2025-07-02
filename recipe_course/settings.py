@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'recipes',
     # Apps de terceiros
     'fontawesomefree',
+    'bootstrap5',
 ]
 
 MIDDLEWARE = [
