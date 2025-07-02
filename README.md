@@ -34,6 +34,7 @@ Este é um projeto de estudo focado no desenvolvimento web com Django, criado pa
 - **CSS3** - Estilização e layout
 - **JavaScript** - Interatividade
 - **Bootstrap** - Framework CSS
+- **FontAwsome 6.6** - Ícones (usei o pacote do próprio Django)
 
 ### Ferramentas de Desenvolvimento
 - **VS Code** - Editor de código

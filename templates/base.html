@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Projeto de Receitas">
+        <meta name="keywords" content="Receitas, Django, Python">
+        <meta name="author" content="Angelo Almeida">
+        <title>
+            {% block title %}
+                Projeto  Receitas - Curso Django -
+            {% endblock title %}
+        </title>
+        {% load static %}
+        <!-- FontAwesome -->
+        <link href="{% static 'fontawesomefree/css/fontawesome.css' %}"
+              rel="stylesheet"
+              type="text/css">
+        <link href="{% static 'fontawesomefree/css/brands.css' %}"
+              rel="stylesheet"
+              type="text/css">
+        <link href="{% static 'fontawesomefree/css/solid.css' %}"
+              rel="stylesheet"
+              type="text/css">
+        <!--<link rel="stylesheet" href="{% static 'recipes/css/styles.css' %}">-->
+    </head>
+    <body>
+        {% include "components/header.html" %}
+        <main>
+            {% block content %}
+            {% endblock content %}
+        </main>
+        {% include "components/footer.html" %}
+    </body>
+</html>

@@ -1,0 +1,207 @@
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>
+                <i class="fa-solid fa-utensils"></i> Projeto Receitas
+            </h3>
+            <p>Desenvolvido durante o curso de Django Web Framework com Python, HTML e CSS.</p>
+        </div>
+        <div class="footer-section">
+            <h4>
+                <i class="fa-solid fa-address-card"></i> Recursos
+            </h4>
+            <ul>
+                <li>
+                    <a href="{% url 'home' %}">Home</a>
+                </li>
+                <li>
+                    <a href="{% url 'sobre' %}">Sobre</a>
+                </li>
+                <li>
+                    <a href="{% url 'contato' %}">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>
+                <i class="fa-solid fa-microchip"></i> Tecnologias
+            </h4>
+            <ul>
+                <li>Python 3.12+</li>
+                <li>Django 4.2+</li>
+                <li>HTML5 & CSS3</li>
+                <li>Bootstrap 5</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>
+                <i class="fa-solid fa-code"></i> Desenvolvedor
+            </h4>
+            <p>
+                <strong>Angelo Almeida</strong>
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/angelolalmeida"
+                   target="_blank"
+                   rel="noopener">
+                    <span class="social-icon"><i class="fa-brands fa-github-square"></i></span> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/angelo-almeida-cientista-dados/"
+                   target="_blank"
+                   rel="noopener">
+                    <span class="social-icon"><i class="fa-brands fa-linkedin"></i></span> LinkedIn
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2025 Projeto Receitas - Django. Desenvolvido com ❤️ durante o aprendizado.</p>
+            <p>
+                Curso: <a href="https://www.udemy.com/course/curso-de-django-web-framework-com-python-html-e-css/"
+    target="_blank"
+    rel="noopener">Django Web Framework - Luiz Otávio Miranda</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<style>
+.footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
+    margin-top: 3rem;
+    padding: 2rem 0 0 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.footer-section h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-section h4 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #3498db;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+.social-icon {
+    font-size: 1.2rem;
+}
+
+.footer-bottom {
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0.5rem 0;
+    color: #bdc3c7;
+}
+
+.footer-bottom a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .social-links {
+        align-items: center;
+    }
+    
+    .footer-bottom-content {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 1.5rem 0 0 0;
+    }
+    
+    .footer-content {
+        padding: 0 0.5rem;
+    }
+    
+    .footer-bottom-content {
+        padding: 0 0.5rem;
+    }
+}
+</style>
